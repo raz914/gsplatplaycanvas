@@ -18,9 +18,9 @@ export default function MapPanel({ isOpen, onClose, mapImage, closeImage }) {
       </button>
 
       {/* Content container */}
-      <div className="w-full h-full flex items-center justify-center animate-slide-in px-6 text-white">
+      <div className="w-full h-full flex items-center justify-center animate-slide-in px-2 text-white bg-white/5">
         {/* Image with overlay */}
-        <div className="relative w-full max-w-4xl h-[60%] flex items-center justify-center">
+        <div className="relative w-full h-full flex items-center justify-center">
           {/* Image */}
           <img
             src={mapImage}
@@ -29,7 +29,7 @@ export default function MapPanel({ isOpen, onClose, mapImage, closeImage }) {
           />
 
           {/* Overlay content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 bg-black/40 rounded">
+          <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 bg-transparent rounded">
             <p className="text-lg font-bold text-center">
               COORDINATES: N43 34 E13 69
             </p>
